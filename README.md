@@ -1,3 +1,5 @@
+![Weather App Cover](/public/cover.png)
+
 # Weather App 天氣應用
 
 一個使用 React + Vite 開發的現代化天氣應用，提供即時天氣資訊和優雅的使用者體驗。
