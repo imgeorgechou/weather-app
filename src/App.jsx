@@ -50,18 +50,14 @@ const App = () => {
           輸入城市名稱，查詢即時天氣狀況
         </p>
         {/* 搜尋列 */}
-        <div className="flex my-5 shadow-xl">
+        <div className="flex w-full my-5 shadow-xl">
           <input
-            className="input"
+            className="input "
             type="text"
             placeholder="請輸入城市名稱"
-            // 使用者輸入的城市名稱存到city中，並清空input框
-            // 注意onChange事件要傳入e，e.target.value才是使用者輸入的城市名稱
             onChange={(e) => setCity(e.target.value)}
-            // 記得要加value，不然不會清空input框，確保 input 的值始終與 React state ( city ) 保持同步
             value={city}
           />
-          {/* 按下按鈕後，呼叫handleSearch函式，onClick裡面要傳一個箭頭函式，傳入使用者輸入的城市名稱 */}
           <button className="btn" onClick={() => handleSearch(city)}>
             查詢
           </button>

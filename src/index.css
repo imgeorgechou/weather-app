@@ -22,10 +22,11 @@ body {
 
 @layer components {
   .btn {
-    @apply text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500  transition-[background-position] duration-500 bg-[length:200%_200%] bg-[position:0%] hover:bg-[position:100%] focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-md rounded-bl-none rounded-tl-none size-15 cursor-pointer;
+    @apply text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500 transition-[background-position] duration-500 bg-[length:200%_200%] bg-[position:0%] hover:bg-[position:100%] focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-md rounded-bl-none rounded-tl-none w-15 h-13 cursor-pointer;
   }
+  /* input添加了 w-full 屬性，使輸入框能夠自適應父容器的寬度 */
   .input {
-    @apply bg-white/10 border border-white/10 rounded-md rounded-br-none rounded-tr-none px-4 py-2  text-white/80 focus:outline-none focus:ring-2 focus:ring-white/10 focus:border-transparent;
+    @apply bg-white/10 border border-white/10 rounded-md rounded-br-none rounded-tr-none text-white/80 focus:outline-none focus:ring-2 focus:ring-white/10 focus:border-transparent w-full pl-3;
   }
   .text-gradient {
     @apply bg-gradient-to-b from-sky-800 to-sky-300/30 bg-clip-text text-transparent;
