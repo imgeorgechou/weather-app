@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import "tailwindcss";
+
+html,
+body {
+  width: 100%;
+  font-family: Noto Sans TC;
+}
+
+@theme {
+  --color-primary: #658caf;
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .flex-col-center {
+    @apply flex flex-col justify-center items-center;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500  transition-[background-position] duration-500 bg-[length:200%_200%] bg-[position:0%] hover:bg-[position:100%] focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-md rounded-bl-none rounded-tl-none size-15 cursor-pointer;
+  }
+  .input {
+    @apply bg-white/10 border border-white/10 rounded-md rounded-br-none rounded-tr-none px-4 py-2  text-white/80 focus:outline-none focus:ring-2 focus:ring-white/10 focus:border-transparent;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-b from-sky-800 to-sky-300/30 bg-clip-text text-transparent;
+  }
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  --_c: no-repeat radial-gradient(farthest-side, #25b09b 92%, #0000);
+  background: var(--_c) top, var(--_c) left, var(--_c) right, var(--_c) bottom;
+  background-size: 12px 12px;
+  animation: l7 1s infinite;
+}
+@keyframes l7 {
+  to {
+    transform: rotate(0.5turn);
+  }
+}
