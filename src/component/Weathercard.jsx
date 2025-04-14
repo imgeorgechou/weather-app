@@ -19,7 +19,7 @@ const Weathercard = ({ data }) => {
   return (
     // 注意要加上data?.length > 0，不然會出現錯誤，因為data是一個物件，所以要加上length > 0
     Object.keys(data || {}).length > 0 ? (
-      <div className="bg-[#c0e5ff] w-[390px] h-[350px] rounded-2xl shadow-xl flex flex-col">
+      <div className="bg-[#c0e5ff] w-full h-[350px] rounded-2xl shadow-xl flex flex-col ">
         <h2 className="text-5xl text-gradient font-extrabold  m-3">{name}</h2>
         <div className="flex flex-center">
           <img
