@@ -41,7 +41,8 @@ const App = () => {
   };
 
   return (
-    <div className="bg-[#4A7DFF] h-screen w-full flex-center">
+    // 使用 min-h-screen 替代 h-screen，並添加 overflow-x-hidden 來防止水平滾動。
+    <div className="bg-[#4A7DFF] min-h-screen w-full flex-center overflow-x-hidden">
       {/* 天氣查詢 */}
       <div className="flex-col-center mx-3 ">
         <h1 className="text-4xl text-white font-bold py-1">城市天氣查詢</h1>
