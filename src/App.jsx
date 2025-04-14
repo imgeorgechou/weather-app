@@ -41,7 +41,7 @@ const App = () => {
   };
 
   return (
-    <div className="bg-[#4A7DFF] h-screen flex-center">
+    <div className="bg-[#4A7DFF] h-screen w-full flex-center">
       {/* 天氣查詢 */}
       <div className="flex-col-center mx-3 ">
         <h1 className="text-4xl text-white font-bold py-1">城市天氣查詢</h1>
